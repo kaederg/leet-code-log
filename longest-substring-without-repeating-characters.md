@@ -27,7 +27,7 @@ var lengthOfLongestSubstring = function(s) {
 };
 ```
 
-performance
+Performance
 
 | Runtime | Memory  |
 |---      |---      |
@@ -57,7 +57,7 @@ var lengthOfLongestSubstring = function(s) {
 };
 ```
 
-performance 
+Performance 
 
 | Runtime | Memory  |
 |---      |---      |
@@ -66,6 +66,6 @@ performance
 
 # `substring` and `slice` and `substr`
 
-short answer is `slice` is the implementation with the least unexpected behaviour.
+Short answer is `slice` is the implementation with the least unexpected behaviour.
 
 `str.slice(beginIndex[, endIndex])`
