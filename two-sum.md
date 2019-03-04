@@ -30,25 +30,20 @@ performance
 with object
 ```
 var twoSum = function(nums, target) {
-    var hash = {};
-    var result = [];
+    let hash = new Object;
     for (var i = 0; i< nums.length; i++) {
-        if(typeof hash[nums[i]] == 'undefined') {
+        var complement = target - nums[i];
+        if(!isNaN(Number(hash[complement]))) {
+            return [i, hash[complement]];
+        }
+        if(isNaN(Number(hash[nums[i]]))) {
             hash[nums[i]] = i;            
         }
-        result.push(i);
-        var test = target - nums[i];
-        if(typeof hash[test] != 'undefined' && hash[test] != i) {
-            result.push(hash[test]);
-            return result;
-        }
-        result.pop();
     }
-    return result;
 };
 ```
 performance
 
 | Runtime | Memory  |
 | ------- | ------- |
-| 64 ms	  | 36.7 MB |
+| 60 ms	  | 35.6 MB |
