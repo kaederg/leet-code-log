@@ -64,6 +64,8 @@ performance
 | 96 ms  | 40.3 MB |
 
 
-# `substring` and `slice`
+# `substring` and `slice` and `substr`
 
+short answer is `slice` is the implementation with the least unexpected behaviour.
 
+`str.slice(beginIndex[, endIndex])`
