@@ -36,9 +36,7 @@ var twoSum = function(nums, target) {
         if(!isNaN(Number(hash[complement]))) {
             return [i, hash[complement]];
         }
-        if(isNaN(Number(hash[nums[i]]))) {
-            hash[nums[i]] = i;            
-        }
+        hash[nums[i]] = i;            
     }
 };
 ```
@@ -46,4 +44,4 @@ performance
 
 | Runtime | Memory  |
 | ------- | ------- |
-| 60 ms	  | 35.6 MB |
+| 60 ms	  | 35.4 MB |
