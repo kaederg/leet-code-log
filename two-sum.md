@@ -21,6 +21,7 @@ var twoSum = function(nums, target) {
 }
 ```
 performance
+
 | Runtime | Memory  |
 | ------- | ------- |
 | 88 ms	  | 35.1 MB |
@@ -47,6 +48,7 @@ var twoSum = function(nums, target) {
 };
 ```
 performance
+
 | Runtime | Memory  |
 | ------- | ------- |
 | 64 ms	  | 36.7 MB |
