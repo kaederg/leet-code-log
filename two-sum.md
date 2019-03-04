@@ -1,4 +1,4 @@
-#hashtable
+# hashtable
 
 trade space for speed
 
@@ -21,9 +21,9 @@ var twoSum = function(nums, target) {
 }
 ```
 performance
-| Runtime | Memory |
-|---------|--------|
-| 88 ms	  | 35.1 MB|
+| Runtime | Memory  |
+| ------- | ------- |
+| 88 ms	  | 35.1 MB |
 
 
 with object
@@ -48,5 +48,5 @@ var twoSum = function(nums, target) {
 ```
 performance
 | Runtime | Memory  |
-|---------|---------|
+| ------- | ------- |
 | 64 ms	  | 36.7 MB |
