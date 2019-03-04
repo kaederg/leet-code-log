@@ -1,4 +1,4 @@
-- initial solution with hash object
+# Hash Object
 
 `console.log` eats quite a lot of memory and time
 
@@ -34,7 +34,7 @@ performance
 | 112 ms  | 40.6 MB |
 
 
-- sliding window
+# Sliding Window
 
 ```
 var lengthOfLongestSubstring = function(s) {
@@ -64,4 +64,6 @@ performance
 | 96 ms  | 40.3 MB |
 
 
-- `substring` and `slice`
+# `substring` and `slice`
+
+
