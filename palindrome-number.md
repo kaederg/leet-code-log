@@ -14,6 +14,10 @@ var isPalindrome = function(x) {
 };
 ```
 
+|   Runtime |   Memory  |
+|---        |---        |
+|   236 ms  |   45.2 MB |
+
 # Improved Solution
 
 ```
@@ -25,8 +29,13 @@ var isPalindrome = function(x) {
     var tmp = 0; //only need to run to the middle digit
     while(x > tmp) {
         tmp = tmp*10 + x%10;
-        x = (x - x%10)/10; //this is faster than Math.floor
+        x = Math.floor(x/10);
     }
-    return tmp == x || x == (tmp-tmp%10)/10; //or for the odd number of digits
+    return tmp == x || x == Math.floor(tmp/10); //or for the odd number of digits
 };
 ```
+Perfomance not improved though.
+
+|   Runtime |   Memory  |
+|---        |---        |
+|   232 ms  |   45.2 MB |
