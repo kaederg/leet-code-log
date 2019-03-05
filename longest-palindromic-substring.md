@@ -59,11 +59,18 @@ Padding the string with same character in between every two characters ensures t
 
 2. repeated verification
 
-Introducing an array (r) to store radius of local palindromic string
+Introducing an array (R) to store radius of local palindromic string
 
-|i	|0|	1|	2|	3|	4|	5|	6|	7|	8|	9| 10|	11|	12|	13|	14|	15|	16|	17|	18|	19|
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|s_new[i]|	$|	#|	a|	#|	b|	#|	b|	#|	a|	#|	h|	#|	o|	#	|p|	#|	x|	#	|p	|#|
-|r[i]	|	1|	2|	1|	2|	5|	2	|1	|2|	1|	2|	1|	2	|1|	2|	1|	4	|1	|2	|1|
+|i	|0|	1|	2|	3|	4|	5|	6|	7|	8|	9| 10|	11|	12|	13|	14|	15|	16|	17|	18|	
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|T[i]|	#|	a|	#|	a|	#|	b|	#|	a|	#|	h|	#|	o|	#|p  |	#|	x|	#	|p	|#|
+|R[i]|	1|	2|	3|	2|	1|	4|1	 |2  |	1|	2|	1|	2|1  |	2|	1|	4|1	    |2	|1|
 
-Solve for r in O(l).
+The key to solve for R in O(l) is reuse the information in previously found palindromic strings.
+
+Still applying expand around center process from left to right. 
+1. i = 0, R[0] = 1, palindromic string = "#". 
+2. i = 1, R[1] = 2, palindromic string = "#a#".
+3. i = 2, R[2] = 3, palindromic string = "#a#a#"
+4. i = 3, based on algo implementation, this step seems suffice the conditions that dun need to solve, but because it is a boundary condition, it actually requires solving to make sure extending sequence.
+
